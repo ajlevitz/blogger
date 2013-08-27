@@ -1,3 +1,5 @@
+#this file shouldn't be needed anymore
+
 class AddPaperclipFieldsToArticle < ActiveRecord::Migration
   def change
     add_column :articles, :image_file_name,    :string

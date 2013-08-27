@@ -4,6 +4,7 @@ Blogger::Application.routes.draw do
     resources :comments
   end
   resources :tags
+  resources :images
 end
 
   # The priority is based upon order of creation: first created -> highest priority.

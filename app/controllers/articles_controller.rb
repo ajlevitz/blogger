@@ -1,7 +1,8 @@
 class ArticlesController < ApplicationController
 
   def article_params
-  	params.require(:article).permit(:title, :body, :tag_list, :image)
+    # I don't think I need to remove :image from here ... maybe will need to switch it to :attachment or something?
+  	params.require(:article).permit(:title, :body, :tag_list, :image_list)
   end
 
   def index
